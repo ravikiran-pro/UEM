@@ -1,0 +1,681 @@
+@font-face {
+  font-family: "robotoBold";
+  src: url("../assets/fonts/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "robotoSemiBold";
+  src: url("../assets/fonts/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "robotoRegular";
+  src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+body {
+  font-family: "robotoRegular";
+}
+
+body .headerRow {
+  margin: 25px 0px;
+}
+
+body .headerRow select {
+  color: #B64360;
+  border-color: #B64360;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  body .headerRow select {
+    font-size: 10px;
+    width: 70px;
+  }
+}
+
+body .headerRow .headerLogo .headerLogoImg {
+  padding: 0px 20px;
+}
+
+body .headerRow .headerLogo .headerLogoImg img {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 450px) {
+  body .headerRow .headerLogo .headerLogoImg img {
+    width: 120px;
+    margin-left: -10px;
+  }
+}
+
+body .headerRow span {
+  cursor: pointer;
+  font-family: "robotoSemiBold";
+}
+
+body .cart {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 4%;
+}
+
+body .cart img {
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  body .cart img {
+    width: 30px;
+  }
+}
+
+body .cart .cartItems span {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -6px;
+  margin-left: -9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 10px;
+  background-color: #A82044;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body .fixed-top, body .fixed-bottom {
+  -webkit-box-shadow: 1px 4px 16px #00000014;
+          box-shadow: 1px 4px 16px #00000014;
+}
+
+body .tabViewSection {
+  margin-top: 125px;
+}
+
+body .tabViewSection .tabSections .nav-pills {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+body .tabViewSection .tabSections .nav-pills .nav-item {
+  width: 50%;
+}
+
+body .tabViewSection .tabSections .nav-pills .nav-item .nav-link {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .tabViewSection .tabSections .nav-pills .nav-item .nav-link .tabIcon {
+  width: 30px;
+  height: auto;
+}
+
+body .tabViewSection .tabSections .nav-pills .nav-item .nav-link span {
+  padding: 0px 5px;
+  font-size: 1rem;
+}
+
+body .tabViewSection .tabSections .nav-pills .nav-item .active {
+  background-color: none;
+  background: none;
+  border-bottom: 2px solid #e36b22;
+  color: #e36b22;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+body .tabViewSection .tabSections .tab-content .tab-pane .row {
+  padding: 15px;
+}
+
+body .tabViewSection .tabSections .tab-content .tab-pane .row .col-12 {
+  margin-bottom: 15px;
+}
+
+body .tabViewSection .tabSections .tab-content .tab-pane .row .col-12 .cardWrapper .imgWrapper .img-fluid {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .tabViewSection .tabSections .tab-content .tab-pane .row .col-12 .cardWrapper h6 {
+  font-family: "robotoSemiBold";
+  margin-top: 0.5rem;
+}
+
+body .serviceDetailPage {
+  margin-top: 125px;
+}
+
+body .serviceDetailPage .row {
+  margin-bottom: 15px;
+}
+
+body .serviceDetailPage .row .imgWrapper img {
+  border-radius: 8px;
+}
+
+body .serviceDetailPage .row .titleHeader {
+  margin: 8px 0px;
+}
+
+body .serviceDetailPage .row .titleHeader h5 {
+  font-family: "robotoBold";
+}
+
+body .serviceDetailPage .row .titleHeader .servicesListHeader {
+  color: #A71D42;
+}
+
+body .serviceDetailPage .row .requiredServicesDivision .iconWrapper {
+  background-color: #f2f2f2;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 9px;
+}
+
+body .serviceDetailPage .row .requiredServicesDivision .iconTitle {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+body .serviceDetailPage .row .requiredServicesDivision .iconTitle span {
+  font-family: "robotoSemiBold";
+  color: #848484;
+}
+
+body .serviceDetailPage .addServicesButton {
+  margin-top: 20px;
+}
+
+body .serviceDetailPage .addServicesButton:nth-child(2) button {
+  background-color: #e36b22;
+}
+
+body .serviceDetailPage .addServicesButton:nth-child(1) button {
+  border: solid 1px #e36b22;
+  background-color: white;
+  color: #e36b22;
+}
+
+body .serviceDetailPage .addServicesButton:nth-child(1) #btnAddService {
+  display: none;
+  background-color: #E8F5E9;
+  color: #4CAF50;
+  border: none;
+}
+
+body .serviceDetailPage .addServicesButton:nth-child(1) #btnAddService div {
+  margin: auto;
+  width: 100%;
+}
+
+body .serviceDetailPage .addServicesButton:nth-child(1) #btnAddService span {
+  font-size: 18px;
+  width: 40px;
+  margin-left: -10%;
+}
+
+@media (max-width: 460px) {
+  body .serviceDetailPage .addServicesButton:nth-child(1) #btnAddService span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 420px) {
+  body .serviceDetailPage .addServicesButton:nth-child(1) #btnAddService span {
+    font-size: 9px;
+  }
+}
+
+body .serviceDetailPage .addServicesButton button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 14px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "robotoSemiBold";
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+@media (max-width: 425px) {
+  body .serviceDetailPage .addServicesButton button {
+    font-size: 12px;
+  }
+}
+
+body .serviceDetailPage .addServicesButton button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .serviceDetailPage .addServicesButton img {
+  width: 24px;
+  vertical-align: sub;
+  height: 100%;
+  padding-left: 6px;
+}
+
+body .serviceDetailPage .addServicesButton .opacity {
+  opacity: 0.8;
+}
+
+body .serviceLists {
+  margin-bottom: 90px;
+}
+
+body .serviceList {
+  margin-bottom: 90px;
+}
+
+body .serviceList ul li {
+  color: #848484;
+}
+
+body .listPoints {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+body .listPoints .bullet_PointHeader_parent {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+body .listPoints .bullet_PointHeader_parent .bullet_PointHeader {
+  font-weight: bold;
+}
+
+body .listPoints .bullet_PointHeader_parent .circle_bulletPoint {
+  width: 8px;
+  height: 8px;
+  background-color: #848484;
+  border-radius: 50px;
+  margin: 8px;
+}
+
+body .listPoints .bullet_points {
+  margin-left: 28px;
+}
+
+body .accommodation .imgWrapper {
+  background-image: url(../assets/images/medicalEscort_1.jpg);
+  height: 50vh;
+  margin-bottom: 2rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
+  border-radius: 50px;
+}
+
+body .accommodation .location_input {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 6px;
+  margin: 16px;
+  height: 50px;
+  padding-left: 18px;
+}
+
+body .accommodation .addServicesButton {
+  margin-top: 20px;
+}
+
+body .accommodation .addServicesButton a {
+  display: none;
+}
+
+body .accommodation .addServicesButton button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #e36b22;
+  color: white;
+  padding: 15px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "robotoSemiBold";
+}
+
+body .accommodation .addServicesButton button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .accommodation .addServicescheckbox {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body .from1 .form_card {
+  -webkit-box-shadow: 0 0 3px 3px #e2dcdc;
+          box-shadow: 0 0 3px 3px #e2dcdc;
+}
+
+body .from1 .form_card .header h5 {
+  font-weight: 500;
+  border-bottom: 4px solid #bc2d4f;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0 0 3px 2px #e2dcdc;
+          box-shadow: 0 0 3px 2px #e2dcdc;
+}
+
+body .from1 .form_card .paddingCard {
+  padding: 12px;
+}
+
+body .from1 .form_card .paddingCard .form_card_sub_text {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+body .from1 .form_card .paddingCard .card_body {
+  margin: 0px;
+}
+
+body .from1 .form_card .paddingCard .card_body .card_data {
+  width: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  border: 1px solid #ececec;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+body .from1 .form_card .paddingCard .card_body .card_data .card_img {
+  background-color: #a2a2a229;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+body .from1 .form_card .paddingCard .card_body .card_data .card_img img {
+  width: 50px;
+  height: 50px;
+}
+
+body .from1 .form_card .paddingCard .addmoreButton {
+  color: #e36b22;
+  width: 100%;
+  padding: 16px 21px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+}
+
+body .from1 .bottom_Button_section {
+  margin-top: 4%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: stick;
+}
+
+body .from1 .bottom_Button_section .Button_style {
+  width: 100%;
+  padding: 12px 30px;
+  border: none;
+  background-color: #e36b22;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+body .from1 .bottom_Button_section .enquiryBtn {
+  background-color: #e36b2233;
+  color: #e36b22;
+}
+
+body .from1 .flex_div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+body .from1 .flex_div label {
+  font-size: 12px;
+}
+
+body .customer_service_page .imgDiv {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body .customer_service_page .imgDiv img {
+  width: 34vh;
+}
+
+body .customer_service_page .text_div p {
+  font-size: 1.2rem;
+  color: #848484;
+}
+
+body .customer_service_page .selected_services_div p {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+body .customer_service_page .selected_services_div img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  body .footer {
+    padding: 0px;
+  }
+}
+
+button:focus, .btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-backdrop {
+  background-color: #00000029;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+.modal .modal-content {
+  -webkit-box-shadow: 1px 4px 16px #00000014;
+          box-shadow: 1px 4px 16px #00000014;
+  border-radius: 20px !important;
+  padding: 12px 12px;
+  width: 90%;
+  margin: auto;
+}
+
+.modal .modal-content .modal-header {
+  border: none;
+}
+
+.modal .modal-content .modal-header button .modal-icon-circle {
+  border: solid 2px red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  opacity: 1;
+}
+
+.modal .modal-content .modal-body {
+  margin-top: -30px;
+}
+
+.modal .modal-content .modal-body img {
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.modal .modal-content .modal-body .descripton {
+  margin: 30px 10px;
+  font-family: "robotoRegular";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.modal .modal-content .modalfooter {
+  border: none;
+  margin: 20px 15px;
+}
+
+.modal .modal-content .modalfooter .btn {
+  font-family: "robotoRegular";
+  font-weight: 600;
+  width: 100%;
+  padding: 12px 0px;
+  margin: 6px 0px;
+  border-radius: 7px;
+}
+
+.modal .modal-content .modalfooter .btn:nth-child(1) {
+  background-color: #009FAF;
+  color: white;
+}
+
+.modal .modal-content .modalfooter .btn:nth-child(2) {
+  color: #009FAF;
+  background-color: #ffffff;
+  border: 0.8px solid #009FAF;
+}
+
+.equiryForm {
+  margin-top: 125px;
+}
+
+.equiryForm .form-text {
+  font-family: "robotoRegular";
+}
+
+.equiryForm form {
+  border-left: solid 2px #00000014;
+}
+
+.equiryForm h5 {
+  font-family: "robotoSemiBold";
+}
+
+.equiryForm label {
+  font-size: 12px;
+}
+
+.equiryForm li {
+  color: black !important;
+  font-size: 20px;
+}
+
+.equiryForm li span {
+  color: black;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.equiryForm .form-control {
+  font-family: robotoSemiBold;
+  padding: 12px 15px;
+  color: black;
+}
+
+.equiryForm .form-control::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.9;
+}
+
+.equiryForm button {
+  font-family: robotoSemiBold;
+  margin-top: 40px;
+  padding: 12px 0px;
+  border-radius: 8px;
+  background-color: #A71D42;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

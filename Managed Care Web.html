@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:5501/homecare.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Care Web</title>
+    <link rel="stylesheet" href="./Managed Care Web_files/4.0.0_bootstrap.min.css">
+    <link rel="stylesheet" href="./Managed Care Web_files/all.css">
+
+    <link rel="stylesheet" href="./Managed Care Web_files/index.css">
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl" ng-init="init()" style="" class="ng-scope">
+    
+    <div id="headers">
+
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Care WEb</title>
+    <link rel="stylesheet" href="./Managed Care Web_files/all.css">
+  
+  
+    <div class="container-fluid fixed-top bg-white">
+      <div class="container h-25 footer">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="headerRow row align-items-center justify-content-between">
+            <div class="col-6 headerLogo d-flex align-items-center p-0">
+              <div class="backLeftArrow">
+		                <a href="http://localhost:5501/index.html"><i class="fas fa-arrow-left backButton text-dark"></i></a>
+              </div>
+              <div class="headerLogoImg">
+		      <a href="http://localhost:5501/index.html"><img class="" src="./Managed Care Web_files/managedCareLogo.png" alt="managedCareLogo"></a>
+              </div>
+            </div>
+            <div class="col-6 d-flex flex-row justify-content-end align-items-center p-0">
+              <div class="cart">
+                  <img src="./Managed Care Web_files/buy (1).png">
+                  <div class="cartItems">
+                    <span>12</span>
+                  </div>
+              </div>
+              
+              <div class="form-group my-auto ml-2 languageManager">
+                <i class="fas fa-angle-down" style="position: absolute; right: 6px; top: 8px; font-size: 24px;color: #B64360;"></i>
+                <!-- <span  class="fa fa-caret-down" aria-hidden="true"></span> -->
+                <select class="form-control text-left" id="SelectUserLanguage">
+                  <option>Tamil</option>
+                  <option>Malay</option>
+                  <option>Mandarin</option>
+                  <option selected="selected">English</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+            <!--  Modal selector
+              <div>
+              <span
+                class=""
+                data-toggle="modal"
+                data-target="#changeLanguageModal"
+                >EN</span
+              >
+            </div> -->
+          <!--modal-->
+          <!-- <div
+            class="modal fade"
+            id="changeLanguageModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="changeLanguageModalTitle"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-sm"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modalHeader">
+                    <span>Select Language</span>
+                  </div>
+                  <div class="modalBody">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="exampleRadios"
+                        id="exampleRadios1"
+                        value="option1"
+                        checked
+                      />
+                      <label class="form-check-label" for="exampleRadios1">
+                        Tamil
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="exampleRadios"
+                        id="exampleRadios2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="exampleRadios2">
+                        Malay
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="exampleRadios"
+                        id="exampleRadios2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="exampleRadios2">
+                        Mandarin
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="exampleRadios"
+                        id="exampleRadios2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="exampleRadios2">
+                        English
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div>
+    <div class="container serviceDetailPage">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="imgWrapper">
+            <img class="img-fluid" src="./Managed Care Web_files/homecare.jpg" alt="WoundCare">
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-start">
+          <div class="titleHeader">
+            <h5>Home Care</h5>
+            <span>Trusted Care for Enriched Living Trained and experienced carers are available to 
+              take care of your loved ones wherever they are. Enjoy peace of mind with the right 
+              personal care, be it for short or long term:</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="titleHeader">
+            <h5 class="servicesListHeader">Services :</h5>
+          </div>
+          <div class="serviceList">
+            <ul>
+              <li>Companionship</li>
+              <li>Exercises</li>
+              <li>
+                Feeding
+              </li>
+              <li>Meal Preparation</li>
+              <li>Medication Reminders
+              </li>
+              <li>Mobility Assistance</li>
+              <li>Personal Grooming &amp; Hygiene</li>
+              <li>Transfers &amp; Turning</li>
+              <li>Risk Assessment in the Home</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="footers">
+
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Care WEb</title>
+  
+  
+    <!-- Modal -->
+        <div class="modal fade" id="ServiceSelectConfirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close">
+                  <span class="modal-icon-circle"><span aria-hidden="true" class="fa fa-times"></span></span>
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                <div>
+                  <img src="./Managed Care Web_files/carts@2x.png" alt="BuyService">
+                </div>
+                <div class="descripton">
+                  13 services have been added to your cart, would you like to continue and equire now?
+                </div>
+              </div>
+              <div class="modalfooter d-flex flex-column align-items-center">
+                  <a href="http://localhost:5501/equiryformnew.html" role="button" aria-disabled="true" class="btn">
+                    Yes, Enquire Now
+                  </a>
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">No, Add More services</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Modal -->
+    <div class="container-fluid fixed-bottom bg-white">
+    <footer class="container footer">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 addServicesButton pr-0 pr-md-3">
+            <button class="btn opacity" id="serviceAddRequest" style="display: none;">
+              <div><span>Add Service(s) to Cart</span></div>
+            </button>
+            <button class="btn btnAddService opacity" id="btnAddService" style="display: inline-block;">
+              <div><span>Service(s) has been added</span></div>
+            </button>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 addServicesButton pl-sm-0 pl-md-3">
+              <button class="btn" data-toggle="modal" data-target="#ServiceSelectConfirmation">
+                <div><span>Proceed</span>
+                    <img src="./Managed Care Web_files/next@2x.png">
+                </div>
+              </button>
+          </div>
+        </div>
+    </footer>
+    <script>
+      $("#serviceAddRequest").click(function(){
+          $("#serviceAddRequest").hide();
+          $("#btnAddService").fadeIn();
+      });
+    </script>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+  <script src="./Managed Care Web_files/jquery.min.js"></script>
+  <script src="./Managed Care Web_files/bootstrap.min.js"></script>
+      <script src="./Managed Care Web_files/angular.min.js"></script>
+
+	    <script src="./Managed Care Web_files/main.js"></script>
+  <script>
+
+    $(function () {
+      $("#headers").load("./CommonNavbar/commonNavbar.html");
+      $("#footers").load("./CommonNavbar/commonFooter.html");
+    });
+  </script>
+
+
+
+</body></html>
